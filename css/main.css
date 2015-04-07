@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "berlin";
+    src: url(../fonts/BRLNSR.TTF)format("truetype");
+}
+
+@font-face {
+    font-family: "dumbledore";
+    src: url(../fonts/dum3thin.ttf)format("truetype");
+}
+
+body {
+    background: url(../img/chalkboardbg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: arial;
+}
+
+
+/*HEADINGS*/
+h1 {
+    font-family: Dumbledore;
+    font-size: 30px;
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-family: Berlin;
+    font-size: 15px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+/* LINKS 
+
+#container a:link {
+    text-decoration: none;
+    color: #8a3121;
+}
+
+#container a:hover {
+    text-decoration: underline;
+}
+
+#container a:active, #container a:visited {
+    text-decoration: underline;
+    color: #bc8d49;
+}*/
+
+
+/*NAVIGATION*/
+nav {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    font-family: Dumbledore;
+    font-size: 18px;
+    background-color: #000;
+    text-align: center;
+}
+
+nav a:link, nav a:visited {
+    padding: 10px 20px 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    color: #bc8d49;
+}
+
+nav a:hover, nav #active {
+    background-color: #FFF;
+    text-decoration: none;
+    color: #bc8d49;
+}
+
+
+/* HEADER & LOGO */
+header {
+    width: 100%;
+    clear: both;
+    padding: 20% 0;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+/* MAIN CONTENT */
+#container {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    clear: both;
+    color: #bc8d49;
+    background-color: #000;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: small;
+}
+
+
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 680px) {
+/*HEADINGS*/
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+
+/*NAVIGATION*/
+    nav {
+        font-size: 20px;
+    }
+
+
+/* TYPE */
+
+
+/* FOOTER */
+    footer {
+        padding: 40px 0;
+        font-size: medium;
+    }
+
+}/*END 680px MEDIA QUERY*/
+
+
+
+/*~~~~~~NEW SECTION~~~~~~~*/
+@media screen and (min-width: 1132px) {
+/*HEADINGS*/
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+/* FOOTER */
+    footer {
+        padding: 50px 0;
+    }
+
+}/*END 1132px MEDIA QUERY*/
