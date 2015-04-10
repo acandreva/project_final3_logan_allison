@@ -103,6 +103,29 @@ header img {
     margin: auto;
 }
 
+main {
+    width: 100%;
+    pading: 10% 0;
+    margin: 10% 0;
+    background-color: #000;
+}
+
+main::after {
+    content: "fdfsdf";
+    display: block;
+    clear: both;
+}
+
+main div {
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+    background-color: #fff;
+    padding: 10% 5%;
+    margin: 10% 0;
+    border: 10px #000 solid;
+    box-sizing: border-box;
+}
 
 /* FOOTER */
 footer {
