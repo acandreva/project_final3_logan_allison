@@ -117,6 +117,14 @@ main div {
     padding-top: 8%;
 }
 
+.menu_items {
+    width: 100%;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
 /* FOOTER */
 
 footer {
