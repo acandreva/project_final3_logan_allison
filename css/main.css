@@ -37,6 +37,10 @@ h2 {
     padding-bottom: 5%;
 }
 
+.menu_items h2 {
+    padding-bottom: 1%;
+}
+
 
 /* LINKS 
 
@@ -123,6 +127,34 @@ main div {
     background-color: #fff;
     padding: 10%;
     box-sizing: border-box;
+}
+
+.menu_items ul {
+    list-style: none;
+}
+
+/*SLIDESHOWS*/
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    z-index: 600;
+    background: black;
+    color: white;
+    padding: 15px;
+    opacity: .5;
+}
+
+.cycle-slideshow {
+    width: 35%;
+    float: left;
+    margin-right: 5%;
+    }
+
+.cycle-slideshow img {
+    width: 100%;
+    height: auto;
 }
 
 /* FOOTER */
