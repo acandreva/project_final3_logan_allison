@@ -27,15 +27,14 @@ body {
 /*HEADINGS*/
 h1 {
     font-family: Dumbledore;
-    font-size: 30px;
-    padding-bottom: 2%;
+    font-size: 2.8em;
+    padding-bottom: 5%;
 }
 
 h2 {
     font-family: Berlin;
-    font-size: 15px;
+    font-size: 1.5em;
     padding-bottom: 5%;
-    padding-top: 5%;
 }
 
 
@@ -124,6 +123,18 @@ main div {
     margin: 10% 0;
     border: 10px #000 solid;
     box-sizing: border-box;
+}
+
+.price {
+    font-style: italic;
+    text-align: right;
+}
+
+.disclaimer {
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    padding-top: 8%;
 }
 
 /* FOOTER */
