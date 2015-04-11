@@ -13,7 +13,6 @@ $(document).ready( function () {
       $(".drawer").drawer();
 
 //SLOW SCROLL
-
     $(function() {
         $('nav a').bind('click',function(event){
             var $anchor = $(this);
