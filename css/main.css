@@ -94,20 +94,20 @@ header img {
     margin: auto;
 }
 
-main {
+#dining_extras {
     width: 100%;
     pading: 10% 0;
     margin: 10% 0;
     background-color: #28282a;
 }
 
-main::after {
+#dining_extras::after {
     content: "";
     display: block;
     clear: both;
 }
 
-main div {
+#dining_extras div {
     width: calc(100% / 3);
     float: left;
     background-color: transparent;
@@ -130,13 +130,17 @@ main div {
     padding-top: 8%;
 }
 
-.menu_items {
+.menu_items, #hotel_intro {
     width: 100%;
     margin: 10% auto;
     background-color: #28282a;
     padding: 10%;
     box-sizing: border-box;
     color: #fff;
+}
+
+#hotel_intro p {
+    margin-bottom: 2%;
 }
 
 .menu_items ul {
@@ -156,11 +160,11 @@ main div {
     opacity: .5;
 }
 
-.cycle-slideshow {
+.cycle-slideshow, #hotel_intro img {
     width: 35%;
     float: left;
     margin-right: 5%;
-    }
+}
 
 .cycle-slideshow img {
     width: 100%;
