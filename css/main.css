@@ -111,7 +111,7 @@ main {
 }
 
 main::after {
-    content: "fdfsdf";
+    content: "";
     display: block;
     clear: both;
 }
@@ -119,7 +119,6 @@ main::after {
 main div {
     width: calc(100% / 3);
     float: left;
-    text-align: center;
     background-color: #fff;
     padding: 10% 5%;
     margin: 10% 0;
@@ -128,22 +127,66 @@ main div {
 }
 
 /* FOOTER */
+
 footer {
     width: 100%;
-    text-align: center;
-    clear: both;
-    color: #bc8d49;
+    margin: auto;
     background-color: #000;
-    text-transform: uppercase;
-    padding: 20px 0;
-    font-size: small;
+    color: #bc8d49;
+/*    clear: both;
+    padding: 20px 0;*/
+}
+
+#contact {
+    width: 100%;
+    pading: 10% 0;
+    margin: 10% 0;
+}
+
+#contact div {
+    width: calc(100% / 3);
+    float: left;
+    padding: 2%;
+    margin: 5% 0;
+    box-sizing: border-box;
+}
+
+#social {
+    text-align: center;
+}
+
+#social img {
+    margin: 0 5%;
+}
+
+#footernav {
+    clear: both;
+    width: 100%;
+    padding: 10px 0;
+    font-family: Dumbledore;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#footernav a:link, #footernav a:visited {
+    text-decoration: none;
+    color: #bc8d49;
+    padding: .5%;
+}
+
+#footernav a:hover {
+    text-decoration: underline;
+    color: #bc8d49;
+}
+
+#footernav p {
+    padding: .5%;
 }
 
 
-
-/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+/*~~~~~~NEW MEDIA QUERY~~~~~~~
 @media screen and (min-width: 680px) {
-/*HEADINGS*/
+/*HEADINGS
     h1 {
         font-size: 35px;
     }
@@ -153,7 +196,7 @@ footer {
     }
 
 
-/*NAVIGATION*/
+/*NAVIGATION
     nav {
         font-size: 20px;
     }
@@ -162,7 +205,7 @@ footer {
 /* TYPE */
 
 
-/* FOOTER */
+/* FOOTER 
     footer {
         padding: 40px 0;
         font-size: medium;
@@ -172,9 +215,9 @@ footer {
 
 
 
-/*~~~~~~NEW SECTION~~~~~~~*/
+/*~~~~~~NEW SECTION~~~~~~~
 @media screen and (min-width: 1132px) {
-/*HEADINGS*/
+/*HEADINGS
     h1 {
         font-size: 45px;
     }
@@ -184,7 +227,7 @@ footer {
     }
 
 
-/* FOOTER */
+/* FOOTER 
     footer {
         padding: 50px 0;
     }
