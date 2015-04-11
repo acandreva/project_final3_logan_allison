@@ -28,7 +28,7 @@ body {
 h1 {
     font-family: Dumbledore;
     font-size: 30px;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
 }
 
 h2 {
@@ -147,7 +147,7 @@ footer {
     width: calc(100% / 3);
     float: left;
     padding: 2%;
-    margin: 5% 0;
+    margin: 5% 0 1%;
     box-sizing: border-box;
 }
 
@@ -156,7 +156,7 @@ footer {
 }
 
 #social img {
-    margin: 0 5%;
+    margin: 1% 5% 0;
 }
 
 #social a:link {
