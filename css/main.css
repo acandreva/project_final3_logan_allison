@@ -29,16 +29,23 @@ h1 {
     font-family: Dumbledore;
     font-size: 2.8em;
     padding-bottom: 5%;
+    color: #bc8d49;
+    letter-spacing: .07em;
 }
 
 h2 {
     font-family: Berlin;
+    letter-spacing: .07em;
     font-size: 1.5em;
     padding-bottom: 5%;
 }
 
 .menu_items h2 {
     padding-bottom: 1%;
+}
+
+footer h1 {
+    font-size: 2.3em;
 }
 
 
@@ -62,6 +69,7 @@ h2 {
 /*NAVIGATION*/
 nav {
     font-family: Dumbledore;
+    letter-spacing: .07em;
 }
 
 
@@ -90,7 +98,7 @@ main {
     width: 100%;
     pading: 10% 0;
     margin: 10% 0;
-    background-color: #000;
+    background-color: #28282a;
 }
 
 main::after {
@@ -102,11 +110,12 @@ main::after {
 main div {
     width: calc(100% / 3);
     float: left;
-    background-color: #fff;
-    padding: 10% 5%;
+    background-color: transparent;
+    padding: 8% 5%;
     margin: 10% 0;
-    border: 10px #000 solid;
+    border: 10px #28282a solid;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .price {
@@ -124,9 +133,10 @@ main div {
 .menu_items {
     width: 100%;
     margin: 10% auto;
-    background-color: #fff;
+    background-color: #28282a;
     padding: 10%;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .menu_items ul {
@@ -201,6 +211,7 @@ footer {
     padding: 10px 0;
     font-family: Dumbledore;
     font-size: 1.5em;
+    letter-spacing: .07em;
     text-align: center;
 }
 
