@@ -57,27 +57,7 @@ h2 {
 
 /*NAVIGATION*/
 nav {
-    width: 100%;
-    margin: auto;
-    padding: 10px 0;
     font-family: Dumbledore;
-    font-size: 18px;
-    background-color: #000;
-    text-align: center;
-}
-
-nav a:link, nav a:visited {
-    padding: 10px 20px 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
-    text-transform: uppercase;
-    color: #bc8d49;
-}
-
-nav a:hover, nav #active {
-    background-color: #FFF;
-    text-decoration: none;
-    color: #bc8d49;
 }
 
 

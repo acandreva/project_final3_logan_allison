@@ -1,5 +1,6 @@
 $(document).ready( function () {
 
+//BACKSTRETCH
   $('header').backstretch([
     "img/chicken.jpg",
     "img/breadcheese2.jpg",
@@ -7,6 +8,10 @@ $(document).ready( function () {
     "img/pighead.jpg",
     "img/octopussalad.jpg"
   ], {duration: 3000, fade: 750});
-  
+
+//DRAWER
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
 
 });

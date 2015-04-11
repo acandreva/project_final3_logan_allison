@@ -7,15 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/drawer.css">
 
 </head>
 
-<body>
-    <nav>
-        <a href="index.html" id="active" >Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<body class="drawer drawer-top drawer-navbar drawer-fixed">
+    <div class="drawer-header">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+    </div>
+    <div class="drawer-main drawer-navbar-default">
+        <nav>
+            <ul class="drawer-menu">
+                <li class="drawer-menu-item">
+                    <a href="index.html" role="button" aria-expanded="false">Home</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="menu.html" role="button" aria-expanded="false">Menu</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="contact.html" role="button" aria-expanded="false">Contact</a>
+                </li>
+            </ul>
+            <div class="drawer-footer">
+                <span></span>
+            </div>
+        </nav>
+    </div>
 
     <div id="container">
         <header>
@@ -88,7 +108,12 @@
 
 
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--header background stuff-->
     <script src="js/jquery.backstretch.min.js"></script>
+    <!--drawer navigation stuff-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
+    <script src="js/jquery.drawer.min.js"></script>
+
     <script src="js/main.js"></script>
 
 </body>
