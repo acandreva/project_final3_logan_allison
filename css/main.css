@@ -40,7 +40,7 @@ h2 {
     padding-bottom: 5%;
 }
 
-.menu_items h2 {
+.menu_items h2, #hotel_info h2 {
     padding-bottom: 1%;
 }
 
@@ -130,7 +130,7 @@ header img {
     padding-top: 8%;
 }
 
-.menu_items, #hotel_intro {
+.menu_items, #hotel_info {
     width: 100%;
     margin: 10% auto;
     background-color: #28282a;
@@ -139,12 +139,22 @@ header img {
     color: #fff;
 }
 
-#hotel_intro p {
+#hotel_info p, #about_us p {
     margin-bottom: 2%;
 }
 
-.menu_items ul {
+.menu_items ul, #hotel_info ul {
     list-style: none;
+}
+
+.clear {
+    clear: both;
+    margin-top: 2%;
+}
+
+.center_ital {
+    text-align: center;
+    font-style: italic;
 }
 
 /*SLIDESHOWS*/
@@ -160,7 +170,7 @@ header img {
     opacity: .5;
 }
 
-.cycle-slideshow, #hotel_intro img {
+.cycle-slideshow, #hotel_info img {
     width: 35%;
     float: left;
     margin-right: 5%;
