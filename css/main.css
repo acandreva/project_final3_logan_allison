@@ -23,6 +23,9 @@ body {
     font-family: arial;
 }
 
+.hidden_info {
+    display: none;
+}
 
 /*HEADINGS*/
 h1 {
@@ -74,6 +77,7 @@ header img {
 /* MAIN CONTENT */
 #container {
     width: 100%;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -165,27 +169,10 @@ footer {
     width: 100%;
 }
 
-#contact_info, #hours, #social {
+#contact_info, #hours {
     width: 90%;
     padding: 5% 0 0;
     margin: 3% auto;
-}
-
-#social {
-    text-align: center;
-}
-
-#social h1 {
-    display: none;
-}
-
-#social img {
-    margin: 0 1% 0;
-}
-
-#social a:link {
-    text-decoration: none;
-    color: #000;
 }
 
 #footernav {
@@ -228,7 +215,7 @@ footer {
     }
 
     /*FOOTER*/
-    #contact_info, #hours, #social {
+    #contact_info, #hours {
         width: 50%;
         padding: 5% 0 0;
         margin: 3% auto;
@@ -244,10 +231,6 @@ footer {
         float: left;
         padding: 5% 0 2% 5%;
         box-sizing: padding-box;
-    }
-
-    #social {
-        clear: both;
     }
 
 }/*END 510px MEDIA QUERY*/
@@ -273,14 +256,6 @@ footer {
         margin: 5% 0 1%;
         box-sizing: border-box;
         clear: none;
-    }
-    
-    #social h1 {
-        display: block;
-    }
-    
-    #social img {
-        margin: 1% 5% 0;
     }
 
 }/*END 710px MEDIA QUERY*/
@@ -313,12 +288,16 @@ footer {
         box-sizing: border-box;
     }
 
-
     /*SLIDESHOWS*/
     .cycle-overlay { 
         width: 88%;
     }
 
+    /*FOOTER*/
+    #contact {
+        max-width: 1300px;
+        margin: auto;
+    }
 
 }/*END 790px MEDIA QUERY*/
 
@@ -338,10 +317,3 @@ footer {
     }
 
 }/*END 1166px MEDIA QUERY*/
-
-
-
-/*~~~~~~NEW SECTION~~~~~~~
-@media screen and (min-width: 1132px) {
-
-}/*END 1132px MEDIA QUERY*/
