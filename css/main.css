@@ -36,7 +36,7 @@ h1 {
 h2 {
     font-family: Berlin;
     letter-spacing: .07em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 5%;
 }
 
@@ -45,25 +45,8 @@ h2 {
 }
 
 footer h1 {
-    font-size: 2.3em;
+    font-size: 2em;
 }
-
-
-/* LINKS 
-
-#container a:link {
-    text-decoration: none;
-    color: #8a3121;
-}
-
-#container a:hover {
-    text-decoration: underline;
-}
-
-#container a:active, #container a:visited {
-    text-decoration: underline;
-    color: #bc8d49;
-}*/
 
 
 /*NAVIGATION*/
@@ -96,31 +79,21 @@ header img {
 
 #dining_extras {
     width: 100%;
-    pading: 10% 0;
     margin: 10% 0;
     background-color: #28282a;
 }
 
-#dining_extras::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 #dining_extras div {
-    width: calc(100% / 3);
-    float: left;
-    background-color: transparent;
-    padding: 8% 5%;
-    margin: 10% 0;
-    border: 10px #28282a solid;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 5%;
+    box-sizing: padding-box;
     color: #fff;
 }
 
 .price {
     font-style: italic;
     text-align: right;
+    color: #8a3121;
 }
 
 .disclaimer {
@@ -147,9 +120,8 @@ header img {
     list-style: none;
 }
 
-.clear {
-    clear: both;
-    margin-top: 2%;
+.hotel_img2 {
+    display: none;
 }
 
 .center_ital {
@@ -162,7 +134,7 @@ header img {
     font-family: tahoma, arial;
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 85%;
     z-index: 600;
     background: black;
     color: white;
@@ -171,9 +143,8 @@ header img {
 }
 
 .cycle-slideshow, #hotel_info img {
-    width: 35%;
-    float: left;
-    margin-right: 5%;
+    width: 100%;
+    margin-bottom: 10%;
 }
 
 .cycle-slideshow img {
@@ -188,30 +159,28 @@ footer {
     margin: auto;
     background-color: #000;
     color: #bc8d49;
-/*    clear: both;
-    padding: 20px 0;*/
 }
 
 #contact {
     width: 100%;
-    pading: 10% 0;
-    margin: 10% 0;
 }
 
-#contact div {
-    width: calc(100% / 3);
-    float: left;
-    padding: 2%;
-    margin: 5% 0 1%;
-    box-sizing: border-box;
+#contact_info, #hours, #social {
+    width: 90%;
+    padding: 5% 0 0;
+    margin: 3% auto;
 }
 
 #social {
     text-align: center;
 }
 
+#social h1 {
+    display: none;
+}
+
 #social img {
-    margin: 1% 5% 0;
+    margin: 0 1% 0;
 }
 
 #social a:link {
@@ -245,52 +214,134 @@ footer {
 }
 
 
-/*~~~~~~NEW MEDIA QUERY~~~~~~~
-@media screen and (min-width: 680px) {
-/*HEADINGS
-    h1 {
-        font-size: 35px;
-    }
-
+/*~~~~~~NEW SECTION~~~~~~~*/
+@media screen and (min-width: 476px) {
+    /*HEADINGS*/
     h2 {
-        font-size: 18px;
+        font-size: 1.5em;
+    }
+
+    /*SLIDESHOW*/
+    .cycle-slideshow, #hotel_info img {
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    /*FOOTER*/
+    #contact_info, #hours, #social {
+        width: 50%;
+        padding: 5% 0 0;
+        margin: 3% auto;
+    }
+}/*END 510px MEDIA QUERY*/
+
+
+/*~~~~~~NEW SECTION~~~~~~~*/
+@media screen and (min-width: 531px) {
+    /*FOOTER*/
+    #contact_info, #hours {
+        width: 50%;
+        float: left;
+        padding: 5% 0 2% 5%;
+        box-sizing: padding-box;
+    }
+
+    #social {
+        clear: both;
+    }
+
+}/*END 510px MEDIA QUERY*/
+
+
+/*~~~~~~NEW SECTION~~~~~~~*/
+@media screen and (min-width: 710px) {
+    /*SLIDESHOWS*/
+    .cycle-slideshow, #hotel_info img {
+        width: 35%;
+        float: left;
+    }
+
+    /*FOOTER*/
+    #contact {
+        margin: 10% 0;
+    }
+
+    #contact_info, #hours, #social {
+        width: calc(100% / 3);
+        float: left;
+        padding: 2%;
+        margin: 5% 0 1%;
+        box-sizing: border-box;
+        clear: none;
+    }
+    
+    #social h1 {
+        display: block;
+    }
+    
+    #social img {
+        margin: 1% 5% 0;
+    }
+
+}/*END 710px MEDIA QUERY*/
+
+/*~~~~~~NEW SECTION~~~~~~~*/
+@media screen and (min-width: 790px) {
+    /*HEADINGS*/
+    footer h1 {
+        font-size: 2.3em;
     }
 
 
-/*NAVIGATION
-    nav {
-        font-size: 20px;
+    /*MAIN CONTENT*/
+    #dining_extras {
+        pading: 10% 0;
+    }
+
+    #dining_extras::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #dining_extras div {
+        width: calc(100% / 3);
+        float: left;
+        padding: 8% 5%;
+        margin: 10% 0;
+        border: 10px #28282a solid;
+        box-sizing: border-box;
     }
 
 
-/* TYPE */
-
-
-/* FOOTER 
-    footer {
-        padding: 40px 0;
-        font-size: medium;
+    /*SLIDESHOWS*/
+    .cycle-overlay { 
+        width: 88%;
     }
 
-}/*END 680px MEDIA QUERY*/
+
+}/*END 790px MEDIA QUERY*/
+
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 1166px) {
+    /*MAIN SECTION*/
+    .hotel_img2 {
+        display: block;
+        clear: both;
+        margin-top: 2%;
+    }
+
+    /*SLIDESHOWS*/
+    .cycle-overlay { 
+        width: 91%;
+    }
+
+}/*END 1166px MEDIA QUERY*/
 
 
 
 /*~~~~~~NEW SECTION~~~~~~~
 @media screen and (min-width: 1132px) {
-/*HEADINGS
-    h1 {
-        font-size: 45px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-
-/* FOOTER 
-    footer {
-        padding: 50px 0;
-    }
 
 }/*END 1132px MEDIA QUERY*/
