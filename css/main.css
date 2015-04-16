@@ -124,8 +124,6 @@ header img {
 
 .menu_items ul {
     list-style: none;
-    width: 50%;
-    float: left;
 }
 
 #hotel_info_about ul {
@@ -266,24 +264,11 @@ footer {
         margin-bottom: 0px;
     }
 
-    .hotel_img2 {
-        display: block;
-        clear: both;
-    }
-
-    /*SLIDESHOWS*/
-    .cycle-slideshow, .hotel_home_img {
+    .hotel_home_img {
         width: 40%;
         float: left;
         margin-right: 5%;
-        margin-bottom: 10%;
-    }
-
-    .hotel_about_img {
-        width: 40%;
-        float: left;
-        margin-right: 5%;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
     }
 
     /*FOOTER*/
@@ -343,6 +328,34 @@ footer {
 
 }/*END 790px MEDIA QUERY*/
 
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 980px) {
+    /*MAIN CONTENT*/
+    .menu_items ul {
+        width: 50%;
+        float: left;
+}
+
+    .hotel_about_img {
+        width: 40%;
+        float: left;
+        margin-right: 5%;
+        margin-bottom: 3%;
+    }
+
+    .hotel_img2 {
+        display: block;
+        clear: both;
+    }
+
+    /*SLIDESHOWS*/
+    .cycle-slideshow {
+        width: 40%;
+        float: left;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+}/*END 980px MEDIA QUERY*/
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
 @media screen and (min-width: 1166px) {
