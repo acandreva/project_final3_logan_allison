@@ -139,7 +139,7 @@ header img {
     font-style: italic;
 }
 
-/*SLIDESHOWS & IMAGES*/
+/*SLIDESHOWS*/
 .cycle-overlay { 
     font-family: tahoma, arial;
     position: absolute;
@@ -224,7 +224,7 @@ footer {
 
     /*FOOTER*/
     #contact div {
-        width: 70%;
+        width: 50%;
         padding: 5% 0 2% 5%;
         box-sizing: border-box;
     }
@@ -261,7 +261,15 @@ footer {
 
     /*FOOTER*/
     #contact {
-        margin: 10% 0;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #contact::after {
+        content: "";
+        display: block;
+        clear: both;
     }
 
     #contact div {
@@ -275,6 +283,7 @@ footer {
 
 }/*END 710px MEDIA QUERY*/
 
+
 /*~~~~~~NEW SECTION~~~~~~~*/
 @media screen and (min-width: 790px) {
     /*HEADINGS*/
@@ -284,7 +293,7 @@ footer {
 
     /*MAIN CONTENT*/
     #dining_extras {
-        pading: 10% 0;
+        padding: 0;
     }
 
     #dining_extras::after, .menu_items::after, #hotel_info_about::after {
@@ -297,7 +306,6 @@ footer {
         width: calc(100% / 3);
         float: left;
         padding: 8% 5%;
-        margin: 10% 0;
         border: 10px #28282a solid;
         box-sizing: border-box;
     }
@@ -306,15 +314,8 @@ footer {
     .cycle-overlay { 
         width: 88%;
     }
-
-    /*FOOTER*/
-    #contact {
-        width: 80%;
-        max-width: 1000px;
-        margin: auto;
-    }
-
 }/*END 790px MEDIA QUERY*/
+
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
 @media screen and (min-width: 980px) {
@@ -343,7 +344,13 @@ footer {
         margin-right: 5%;
         margin-bottom: 5%;
     }
+
+    /*FOOTER*/
+    #contact {
+        width: 60%;
+    }
 }/*END 980px MEDIA QUERY*/
+
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
 @media screen and (min-width: 1166px) {
