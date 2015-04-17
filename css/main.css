@@ -30,7 +30,7 @@ body {
 /*HEADINGS*/
 h1 {
     font-family: Dumbledore;
-    font-size: 2.8em;
+    font-size: 2.5em;
     padding-bottom: 5%;
     color: #bc8d49;
     letter-spacing: .07em;
@@ -40,18 +40,17 @@ h2 {
     font-family: Berlin;
     letter-spacing: .07em;
     font-size: 1.3em;
-    padding-bottom: 5%;
-}
-
-.menu_items h2, #hotel_info_about h2 {
     padding-bottom: 4%;
     margin-top: 5%;
+}
+
+#dining_extras h1 {
+    padding-bottom: 0;
 }
 
 footer h1 {
     font-size: 2em;
 }
-
 
 /*NAVIGATION*/
 nav {
@@ -85,13 +84,14 @@ header img {
 #dining_extras {
     width: 100%;
     margin: 10% 0;
+    padding: 10% 0;
     background-color: #28282a;
 }
 
 #dining_extras div {
     width: 100%;
     padding: 5%;
-    box-sizing: padding-box;
+    box-sizing: border-box;
     color: #fff;
 }
 
@@ -99,14 +99,18 @@ header img {
     font-style: italic;
     text-align: right;
     color: #8a3121;
-    /*margin-top: 5px;*/
+    padding-top: 7px;
+}
+
+#hotel_info_about .price {
+    padding-bottom: 7px;
 }
 
 .disclaimer {
     font-size: 14px;
     font-style: italic;
     text-align: right;
-    padding-top: 8%;
+    padding-top: 7px;
 }
 
 .menu_items, #hotel_info_home, #hotel_info_about {
@@ -118,15 +122,11 @@ header img {
     color: #fff;
 }
 
-#hotel_info_home p, #hotel_info_about p, #about_us p {
-    margin-bottom: 7%;
+#hotel_info_home p, #about_us p {
+    margin-bottom: 5%;
 }
 
-.menu_items ul {
-    list-style: none;
-}
-
-#hotel_info_about ul {
+.menu_items ul, #hotel_info_about ul {
     list-style: none;
 }
 
@@ -139,7 +139,7 @@ header img {
     font-style: italic;
 }
 
-/*SLIDESHOWS*/
+/*SLIDESHOWS & IMAGES*/
 .cycle-overlay { 
     font-family: tahoma, arial;
     position: absolute;
@@ -163,7 +163,6 @@ header img {
 }
 
 /* FOOTER */
-
 footer {
     width: 100%;
     margin: auto;
@@ -210,12 +209,16 @@ footer {
 /*~~~~~~NEW SECTION~~~~~~~*/
 @media screen and (min-width: 476px) {
     /*HEADINGS*/
+    h1 {
+        font-size: 2.8em;
+    }
+
     h2 {
         font-size: 1.5em;
     }
 
     /*MAIN CONTENT*/
-    #hotel_info_home p, #hotel_info_about p, #about_us p {
+    #hotel_info_home p, #about_us p {
         margin-bottom: 5%;
     }
 
@@ -223,17 +226,7 @@ footer {
     #contact div {
         width: 70%;
         padding: 5% 0 2% 5%;
-        box-sizing: padding-box;
-    }
-}/*END 476px MEDIA QUERY*/
-
-
-/*~~~~~~NEW SECTION~~~~~~~*/
-@media screen and (min-width: 585px) {
-    /*HEADINGS
-    .menu_items h2, #hotel_info_about h2 {
-        padding-bottom: 2%;
-        margin-top: 4%;
+        box-sizing: border-box;
     }
 }/*END 476px MEDIA QUERY*/
 
@@ -241,7 +234,7 @@ footer {
 /*~~~~~~NEW SECTION~~~~~~~*/
 @media screen and (min-width: 710px) {
     /*HEADINGS*/
-    .menu_items h2, #hotel_info_about h2 {
+    h2 {
         padding-bottom: 10px;
         margin-top: 0;
     }
@@ -255,13 +248,8 @@ footer {
         margin-bottom: 0;
     }
 
-    .price {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
     #drinks .price {
-        margin-bottom: 0px;
+        padding-top: 0px;
     }
 
     .hotel_home_img {
