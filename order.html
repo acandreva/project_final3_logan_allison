@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>The Leaky Cauldron</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/drawer.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="drawer drawer-top drawer-navbar drawer-fixed">
+    <div class="drawer-header">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+    </div>
+    <div class="drawer-main drawer-navbar-default">
+        <nav>
+            <h1 class="hidden_info">main navigation</h1>
+            <ul class="drawer-menu">
+                <li class="drawer-menu-item">
+                    <a href="index.html" role="button" aria-expanded="false">Home</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="about.html" role="button" aria-expanded="false">About</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="menu.html" role="button" aria-expanded="false">Menu</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="order.html" role="button" aria-expanded="false">Order</a>
+                </li>
+            </ul>
+            <div class="drawer-footer">
+                <span></span>
+            </div>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="hidden_info">header image</h1>
+        <img src="img/leakycauldronlogo_outline.png" alt="Leaky Cauldron Logo" title="Leaky Cauldron Logo" />
+    </header>
+
+    <div id="container">
+
+        <div id="order">
+            <form id="orderform">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="First name...">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Last name...">
+                <label for="form_menu">What would you like?</label>
+                <select id="form_menu">
+                    <option value="0">Select Item</option>
+                    <optgroup label="Appetizers">
+                        <option value="8.8">Dragon Milk Cheese &amp; Fruit</option>
+                        <option value="8.2">Homemade Yummy Honey &amp; Apples</option>
+                        <option value="10">Octopus Salad</option>
+                        <option value="10">Pumpkin Soup</option>
+                    </optgroup>
+                    <optgroup label="Entrees">
+                        <option value="32">Ploughman's</option>
+                        <option value="19">Bangers &amp; Rice</option>
+                        <option value="18">Beef, Lamb &amp; Guinness Stew</option>
+                        <option value="16">Minced Beef &amp; Chips</option>
+                    </optgroup>
+                    <optgroup label="Beverages">
+                        <option value="8">Spiced Cider</option>
+                        <option value="8.3">Tounge Tying Lemon Squash</option>
+                        <option value="8.3">Otter's Sparkling Juice</option>
+                        <option value="8">Pumpkin Juice</option>
+                        <option value="9">Butterbeer</option>
+                        <option value="10">Fishy Green Ale</option>
+                        <option value="16">Dragon Scale</option>
+                    </optgroup>
+                    <optgroup label="Desserts">
+                        <option value="7">Dark Chocolate Cake</option>
+                        <option value="7">Cherry Bombs</option>
+                        <option value="7">Lemon Poppy Seed Loaf</option>
+                        <option value="9">Blackberry Pasties</option>
+                        <option value="10">Treacle Tart</option>
+                   </optgroup>
+                </select>
+                <label for="amount">Amount</label>
+                <input id="amount" type=number min=1 max=10>
+                <input type=submit value="Place Order">
+            </form>
+            <p id="order_info"></p>
+            <p class="disclaimer">*All prices have been converted to sickles.</p>
+        </div><!--ends order div-->
+
+    </div><!--end container div-->
+
+    <footer>
+        <h1 class="hidden_info">footer information</h1>
+        <div id="contact">
+            <div>
+                <h1>Contact Information</h1>
+                <p>555-949-2737 (555-WIZARDS)</p>
+                <p>theleakycauldron@wizards.net</p>
+                <p>17 Charing Cross Road, London, United Kingdom</p>
+            </div>
+            <div>
+                <h1>Bar Hours</h1>
+                <p>Tuesday to Friday, noon to 2 a.m.</p>
+                <p>Saturday, noon to 4 a.m.</p>
+                <p>Sunday, 9 a.m. to 2 p.m.</p>
+            </div>
+        </div><!--end contact div-->
+        <div id="footernav">
+            <p>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                |
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/fbook.png" alt="facebook page"/>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="img/twitter.png" alt="twitter page"/>
+                </a>
+                <a href="https://www.pinterest.com/" target="_blank">
+                    <img src="img/pinterest.png" alt="pinterest page"/>
+                </a>
+            </p>
+            <p>&copy; Allison Logan</p>
+        </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--header background js-->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <!--drawer navigation js-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
+    <script src="http://cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script>
+    <script src="js/jquery.drawer.min.js"></script>
+    <!--slow scroll js-->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/slowscroll.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
