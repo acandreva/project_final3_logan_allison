@@ -356,3 +356,13 @@ footer {
     }
 
 }/*END 1166px MEDIA QUERY*/
+
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 1200px) {
+    /*HEADER & LOGO*/
+    header img {
+        max-width: 800px;
+    }
+
+}/*END 1200px MEDIA QUERY*/
