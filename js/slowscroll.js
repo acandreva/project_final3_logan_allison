@@ -1,16 +1,14 @@
 $(document).ready( function () {
 
 //SLOW SCROLL
-    $(function() {
-        $('nav a').bind('click',function(event){
-            var $anchor = $(this);
+    $('.slow_scroll').bind('click',function(event){
+        var $anchor = $(this);
 
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1000);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
 
-            event.preventDefault();
-        });
+        event.preventDefault();
     });
 
 });
