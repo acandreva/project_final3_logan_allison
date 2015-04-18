@@ -81,12 +81,6 @@ header img {
     margin: auto;
 }
 
-#dining_extras div {
-    width: 100%;
-    padding: 5%;
-    box-sizing: border-box;
-    color: #fff;
-}
 
 .price {
     font-style: italic;
@@ -106,10 +100,21 @@ header img {
     padding-top: 7px;
 }
 
-#dining_extras, .menu_items, #hotel_info_home, #hotel_info_about {
+#dining_extras, #hotel_info_home, .menu_items, #hotel_info_about {
     width: 100%;
     margin: 5% auto;
     padding: 0 10%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#dining_extras, #hotel_info_home {
+    padding: 0 5%;
+}
+
+#dining_extras div {
+    width: 100%;
+    padding: 0 20px;
     box-sizing: border-box;
     color: #fff;
 }
@@ -295,6 +300,10 @@ footer {
 /*~~~~~~NEW SECTION~~~~~~~*/
 @media screen and (min-width: 790px) {
     /*HEADINGS*/
+    h1 {
+        font-size: 3em;
+    }
+
     footer h1 {
         font-size: 2.3em;
     }
@@ -302,7 +311,6 @@ footer {
     #dining_extras div {
         width: calc(100% / 3);
         float: left;
-        padding: 8% 5%;
         box-sizing: border-box;
     }
 
@@ -315,6 +323,10 @@ footer {
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
 @media screen and (min-width: 980px) {
+    /*HEADINGS*/
+    h1 {
+        font-size: 3.3em;
+    }
     /*MAIN CONTENT*/
     .menu_items ul {
         width: 40%;
@@ -350,6 +362,10 @@ footer {
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
 @media screen and (min-width: 1166px) {
+    /*HEADINGS*/
+    h1 {
+        font-size: 3.5em;
+    }
     /*SLIDESHOWS*/
     .cycle-overlay { 
         width: 91%;
