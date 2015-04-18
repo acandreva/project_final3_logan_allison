@@ -261,7 +261,7 @@ footer {
     }
 
     .hotel_home_img {
-        width: 40%;
+        width: 50%;
         float: left;
         margin-right: 5%;
         margin-bottom: 5%;
@@ -317,12 +317,12 @@ footer {
 @media screen and (min-width: 980px) {
     /*MAIN CONTENT*/
     .menu_items ul {
-        width: 50%;
+        width: 40%;
         float: left;
 }
 
     .hotel_about_img {
-        width: 40%;
+        width: 50%;
         float: left;
         margin-right: 5%;
         margin-bottom: 3%;
@@ -335,7 +335,7 @@ footer {
 
     /*SLIDESHOWS*/
     .cycle-slideshow {
-        width: 40%;
+        width: 50%;
         float: left;
         margin-right: 5%;
         margin-bottom: 5%;
