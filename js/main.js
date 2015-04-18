@@ -33,15 +33,14 @@ $(document).ready( function () {
         var itemCost = menu.options[menu.selectedIndex].value;
         var itemName = menu.options[menu.selectedIndex].text;
         var total = numOrdered*itemCost;
-        document.getElementById('order_info').innerHTML = fullName + ", you have ordered " + numOrdered + " " + itemName + " for a total of " + total + " sickles.";
+        document.getElementById('order_info').innerHTML = fullName + ", you have ordered " + numOrdered + " of the " + itemName + " for a total of " + total + " sickles.";
     
     }
     
     $('#orderform').submit(function( event ) {
         event.preventDefault();
-        $('#orderform').trigger('reset');
-        $('#order_info').text('');
-        alert('Thank you for your order. It will be ready for pickup in 30 mintes.');
+        $('form').hide('slow');
+        $('#order_info').text('Thank you for your order. It will be ready for pickup in 30 minutes.');
     });
 
 
