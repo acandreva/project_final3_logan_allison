@@ -81,13 +81,6 @@ header img {
     margin: auto;
 }
 
-#dining_extras {
-    width: 100%;
-    margin: 10% 0;
-    padding: 10% 0;
-    background-color: #28282a;
-}
-
 #dining_extras div {
     width: 100%;
     padding: 5%;
@@ -113,13 +106,16 @@ header img {
     padding-top: 7px;
 }
 
-.menu_items, #hotel_info_home, #hotel_info_about {
+#dining_extras, .menu_items, #hotel_info_home, #hotel_info_about {
     width: 100%;
-    margin: 10% auto;
-    background-color: #28282a;
-    padding: 10%;
+    margin: 5% auto;
+    padding: 0 10%;
     box-sizing: border-box;
     color: #fff;
+}
+
+#hotel_info_home {
+    margin-bottom: 10%;
 }
 
 #hotel_info_home p, #about_us p {
@@ -137,6 +133,18 @@ header img {
 .center_ital {
     text-align: center;
     font-style: italic;
+}
+
+#dining_extras::after, .menu_items::after, #hotel_info_about::after {
+    content: "";
+    display: block;
+    clear: both;
+    border-bottom: 2px solid #fff;
+    padding-top: 5%;
+}
+
+#dessert.menu_items::after, #hotel_info_about::after {
+    border-bottom: 0px;
 }
 
 /*SLIDESHOWS*/
@@ -291,22 +299,10 @@ footer {
         font-size: 2.3em;
     }
 
-    /*MAIN CONTENT*/
-    #dining_extras {
-        padding: 0;
-    }
-
-    #dining_extras::after, .menu_items::after, #hotel_info_about::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
     #dining_extras div {
         width: calc(100% / 3);
         float: left;
         padding: 8% 5%;
-        border: 10px #28282a solid;
         box-sizing: border-box;
     }
 
