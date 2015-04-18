@@ -85,7 +85,7 @@ header img {
 .price {
     font-style: italic;
     text-align: right;
-    color: #8a3121;
+    color: #bc8d49;
     padding-top: 7px;
 }
 
@@ -98,6 +98,7 @@ header img {
     font-style: italic;
     text-align: right;
     padding-top: 7px;
+    color: #bc8d49;
 }
 
 #dining_extras, #hotel_info_home, .menu_items, #hotel_info_about {
